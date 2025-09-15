@@ -30,9 +30,16 @@
     
 ## exception handling
 # question - read about generic exception handling in google. demonstrate this in next class
-try:
-    int("abc")
-except ValueError:
-    print("ValueError")
-except Exception as e: # it is best practice to catch specific errors wherever possible, and use generic exception only as a fallback
-    print("Oops!:", e)
+# try:
+#     int("abc")
+# except ValueError:
+#     print("ValueError")
+# except Exception as e: # it is best practice to catch specific errors wherever possible, and use generic exception only as a fallback
+#     print("Oops!:", e)
+
+## random and math module
+# question - use appropriate function from the math module to find the cube root of a given number. use google/chatgpt
+import math
+n = math.cbrt(27)
+print(n)
+

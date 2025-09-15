@@ -58,18 +58,70 @@
 #     print("Error: Please enter a valid number!")
 
 # activity 2 - this activity is almost the same as activity 1, but here you have to keep asking the user to enter their age until they enter a valid number
-while True:
-    try:
-        age = int(input("Enter your age: "))
-        if age >= 18:
-            print("You are an adult")
-        else:
-            print("You are a minor")
-        break
-    except ValueError:
-        print("Error: Please enter a valid number!")
+# while True:
+#     try:
+#         age = int(input("Enter your age: "))
+#         if age >= 18:
+#             print("You are an adult")
+#         else:
+#             print("You are a minor")
+#         break
+#     except ValueError:
+#         print("Error: Please enter a valid number!")
 
 ## random and math module
+# activity 1 - demonstration of random module
+# import random
+# n = random.randint(1, 10) # includes both 1 and 10
+# print(n)
+
+# activity 2 - implement rock, paper, scissors game
+# import random
+# user_choice = int(input("Enter 1 for rock, 2 for paper or 3 for scissors: "))
+# if user_choice == 1:
+#     user_choice = "ROCK"
+#     print("Your choice: rock")
+# elif user_choice == 2:
+#     user_choice = "PAPER"
+#     print("Your choice: paper")
+# elif user_choice == 3:
+#     user_choice = "SCISSORS"
+#     print("Your choice: scissors")
+
+# computer_choice = random.randint(1, 3)
+# if computer_choice == 1:
+#     computer_choice = "ROCK"
+#     print("Computer choice: rock")
+# elif computer_choice == 2:
+#     computer_choice = "PAPER"
+#     print("Computer choice: paper")
+# else:
+#     computer_choice = "SCISSORS"
+#     print("Computer choice: scissors")
+
+# if user_choice == computer_choice:
+#     print("It's a tie!")
+
+# elif (user_choice == "ROCK" and computer_choice == "SCISSORS") or (user_choice == "PAPER" and computer_choice == "ROCK") or (user_choice == "SCISSORS" and computer_choice == "PAPER"):
+    
+#     print("You win!")
+
+# else:
+#     print("Computer wins!")    
+
+# activity 3 - demonstration of math module
+import math
+n = math.sqrt(19)
+n = round(n, 2)
+print(n)
+
+f = math.floor(3.8)
+print(f)
+c = math.ceil(3.2)
+print(c)
+
+lcm = math.lcm(40, 8)
+print(lcm)
 
 ## date, time and calendar module
 #         
